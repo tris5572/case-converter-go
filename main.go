@@ -19,7 +19,6 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Printf("Style: %s\n", style.String())
 	for _, in := range inputs {
 		words := splitString(in)
 		converted := ConvertWords(words, style)
