@@ -14,6 +14,7 @@ const (
 	CaseLower
 	CaseUpper
 	CaseUpperSnake
+	CaseTrain
 )
 
 // String は CaseStyle を人間可読な名前で返します
@@ -33,6 +34,8 @@ func (c CaseStyle) String() string {
 		return "upper"
 	case CaseUpperSnake:
 		return "upper-snake"
+	case CaseTrain:
+		return "train"
 	default:
 		return "unknown"
 	}
@@ -63,6 +66,8 @@ func CaseStyleFromFlag(s string) (CaseStyle, bool) {
 		return CaseUpper, true
 	case "upper-snake", "upper_snake_case":
 		return CaseUpperSnake, true
+	case "train", "train-case", "train_case":
+		return CaseTrain, true
 	default:
 		return CaseUnknown, false
 	}

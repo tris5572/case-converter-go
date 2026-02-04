@@ -62,6 +62,14 @@ func ConvertWords(words []string, style CaseStyle) string {
 			}
 			return strings.Join(uppered, "_")
 		}
+	case CaseTrain:
+		{
+			capitalized := make([]string, 0, len(words))
+			for _, w := range words {
+				capitalized = append(capitalized, capitalize(w))
+			}
+			return strings.Join(capitalized, "-")
+		}
 	default:
 		return strings.Join(words, " ")
 	}

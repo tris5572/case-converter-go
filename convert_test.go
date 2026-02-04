@@ -37,6 +37,10 @@ func TestConvertWords(t *testing.T) {
 		{"HelloWorld", CaseUpperSnake, "HELLO_WORLD"},
 		{"theACRONYMWord", CaseUpperSnake, "THE_ACRONYM_WORD"},
 		{"JSON2XML", CaseUpperSnake, "JSON_2_XML"},
+
+		{"HelloWorld", CaseTrain, "Hello-World"},
+		{"theACRONYMWord", CaseTrain, "The-ACRONYM-Word"},
+		{"JSON2XML", CaseTrain, "JSON-2-XML"},
 	}
 
 	for _, tt := range tests {
