@@ -5,7 +5,7 @@
 ## 機能
 
 - 入力文字列を以下のスタイルへ変換
-  - camelCase, PascalCase, snake_case, kebab-case, lowercase, UPPERCASE, UPPER_SNAKE_CASE, Train-Case
+  - camelCase, PascalCase, snake_case, UPPER_SNAKE_CASE, kebab-case, Train-Case, lowercase, UPPERCASE
 - コマンドライン引数または標準入力（stdin）から入力を受け取る
 - `-`（単一ダッシュ）を引数の位置に書くと、その位置を stdin の各行で置換
 - `--help` でヘルプを表示
@@ -43,14 +43,14 @@ echo -e "a\nb" | ./case-converter-go before - after
 
 - `-h`, `--help` — ヘルプを表示
 - `-` — stdin からの行で置換（または引数が空のときに stdin を読み込む）
-- `--camel` / `camel` — camelCase
-- `--pascal` / `pascal` — PascalCase
-- `--snake` / `snake_case` — snake_case
-- `--kebab` / `kebab-case` — kebab-case
-- `--lower` / `lowercase` — lowercase
-- `--upper` / `uppercase` — UPPERCASE
-- `--upper-snake` / `upper_snake_case` — UPPER_SNAKE_CASE
-- `--train` / `train-case` — Train-Case
+-- `--camel` / `camel` — camelCase
+-- `--pascal` / `pascal` — PascalCase
+-- `--snake` / `snake_case` — snake_case
+-- `--upper-snake` / `upper_snake_case` — UPPER_SNAKE_CASE
+-- `--kebab` / `kebab-case` — kebab-case
+-- `--train` / `train-case` — Train-Case
+-- `--lower` / `lowercase` — lowercase
+-- `--upper` / `uppercase` — UPPERCASE
 
 > 注意: フラグは後勝ちで、複数のスタイル指定がある場合、最後の指定が適用されます。
 

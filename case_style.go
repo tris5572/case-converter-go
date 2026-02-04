@@ -10,11 +10,11 @@ const (
 	CaseCamel
 	CasePascal
 	CaseSnake
+	CaseUpperSnake
 	CaseKebab
+	CaseTrain
 	CaseLower
 	CaseUpper
-	CaseUpperSnake
-	CaseTrain
 )
 
 // String は CaseStyle を人間可読な名前で返します
