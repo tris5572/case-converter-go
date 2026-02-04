@@ -43,20 +43,20 @@ echo -e "a\nb" | ./case-converter-go before - after
 
 - `-h`, `--help` — ヘルプを表示
 - `-` — stdin からの行で置換（または引数が空のときに stdin を読み込む）
--- `--camel` / `camel` — camelCase
--- `--pascal` / `pascal` — PascalCase
--- `--snake` / `snake_case` — snake_case
--- `--upper-snake` / `upper_snake_case` — UPPER_SNAKE_CASE
--- `--kebab` / `kebab-case` — kebab-case
--- `--train` / `train-case` — Train-Case
--- `--lower` / `lowercase` — lowercase
--- `--upper` / `uppercase` — UPPERCASE
+- `--camel` / `camel` — camelCase
+- `--pascal` / `pascal` — PascalCase
+- `--snake` / `snake_case` — snake_case
+- `--upper-snake` / `upper_snake_case` — UPPER_SNAKE_CASE
+- `--kebab` / `kebab-case` — kebab-case
+- `--train` / `train-case` — Train-Case
+- `--lower` / `lowercase` — lowercase
+- `--upper` / `uppercase` — UPPERCASE
 
 > 注意: フラグは後勝ちで、複数のスタイル指定がある場合、最後の指定が適用されます。
 
 ## テスト
 
-プロジェクトのテストは以下で実行できます:
+プロジェクトのテストは以下で実行できます。
 
 ```bash
 go test ./...
