@@ -7,7 +7,11 @@ import (
 
 func main() {
 	args := os.Args[1:]
-	style, inputs := processArgs(args)
+	style, inputs, help := processArgs(args)
+	if help {
+		printHelp()
+		return
+	}
 	fmt.Printf("Style: %s\n", style.String())
 	for _, in := range inputs {
 		words := splitString(in)
