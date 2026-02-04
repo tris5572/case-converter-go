@@ -54,6 +54,14 @@ func ConvertWords(words []string, style CaseStyle) string {
 		return strings.ToLower(strings.Join(words, ""))
 	case CaseUpper:
 		return strings.ToUpper(strings.Join(words, ""))
+	case CaseUpperSnake:
+		{
+			uppered := make([]string, 0, len(words))
+			for _, w := range words {
+				uppered = append(uppered, strings.ToUpper(w))
+			}
+			return strings.Join(uppered, "_")
+		}
 	default:
 		return strings.Join(words, " ")
 	}

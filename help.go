@@ -15,6 +15,7 @@ func printHelp() {
 	fmt.Println("  --kebab, kebab    Output kebab-case")
 	fmt.Println("  --lower, lower    Output lowercase")
 	fmt.Println("  --upper, upper    Output UPPERCASE")
+	fmt.Println("  --upper-snake, upper_snake_case    Output UPPER_SNAKE_CASE")
 	fmt.Println()
 	fmt.Println("Examples:")
 	fmt.Println("  case-converter-go --camel \"Hello World\"")

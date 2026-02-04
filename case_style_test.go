@@ -13,6 +13,7 @@ func TestCaseStyleString(t *testing.T) {
 		{CaseKebab, "kebab"},
 		{CaseLower, "lower"},
 		{CaseUpper, "upper"},
+		{CaseUpperSnake, "upper-snake"},
 		{CaseUnknown, "unknown"},
 	}
 
@@ -37,6 +38,8 @@ func TestCaseStyleFromFlag(t *testing.T) {
 		{"kebab-case", CaseKebab, true},
 		{"--lower", CaseLower, true},
 		{"uppercase", CaseUpper, true},
+		{"--upper-snake", CaseUpperSnake, true},
+		{"upper_snake_case", CaseUpperSnake, true},
 		{"--unknown", CaseUnknown, false},
 		{"", CaseUnknown, false},
 	}
