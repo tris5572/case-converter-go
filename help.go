@@ -8,6 +8,7 @@ func printHelp() {
 	fmt.Println()
 	fmt.Println("Options:")
 	fmt.Println("  -h, --help        Show this help message")
+	fmt.Println("  - (single dash)    Read input from stdin (or use no strings)")
 	fmt.Println("  --camel, camel    Output camelCase")
 	fmt.Println("  --pascal, pascal  Output PascalCase")
 	fmt.Println("  --snake, snake    Output snake_case")

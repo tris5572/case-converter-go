@@ -27,7 +27,7 @@ func TestHelpOutput(t *testing.T) {
 	os.Stdout = orig
 
 	out := string(b)
-	if !strings.Contains(out, "Usage") || !strings.Contains(out, "--camel") {
+	if !strings.Contains(out, "Usage") || !strings.Contains(out, "--camel") || !strings.Contains(out, "stdin") {
 		t.Fatalf("help output missing expected text: %q", out)
 	}
 }
